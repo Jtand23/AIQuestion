@@ -1,0 +1,14 @@
+package com.yupi.aibackend.scoring;
+
+import com.yupi.aibackend.model.entity.App;
+import com.yupi.aibackend.model.entity.UserAnswer;
+
+import java.util.List;
+
+/**
+ * 评分策略
+ */
+public interface ScoringStrategy {
+
+    UserAnswer doScore(List<String> choices, App app) throws Exception;
+}
